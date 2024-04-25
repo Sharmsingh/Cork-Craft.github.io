@@ -1,0 +1,194 @@
+/* Color Palette */
+:root {
+    --cream: #edede9;
+    --taupe: #d6ccc2;
+    --peach: #f5ebe0;
+    --sand: #e3d5ca;
+    --dusty-rose: #d5bdaf;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 1rem 2rem;
+}
+
+.logo-and-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 100px; /* Adjust to your logo's aspect ratio */
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: var(--dusty-rose);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dusty-rose);
+    font-weight: bold;
+}
+
+nav ul li a.icon {
+    color: var(--dusty-rose);
+}
+.full-width-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+.faq-section {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: #edede9; /* Your cream color */
+}
+
+.faq-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.faq-content {
+  margin-left: 1px;
+  background: #FFFFFF; /* white background for FAQ content */
+  padding: 10px;
+  width: 135%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional shadow for depth */
+}
+
+.faq h2 {
+  color: #000; /* Adjust as per your color palette */
+  margin-bottom: 10px;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 1.5px solid #ccc; /* Line separating questions */
+}
+
+.active, .accordion:hover {
+  background-color: #f5ebe0; /* Color change on hover */
+}
+
+.panel {
+  padding: 0 60px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.horizontal-line-section-container {
+  clear: both; /* This ensures that the content will not float next to floated elements */
+  padding-top: 20px; /* Space above the line */
+  padding-bottom: 20px; /* Space below the line */
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #FFFFFF; /* Or use a variable from your color scheme */
+    color: #000000; /* Or use a variable from your color scheme */
+    padding: 2em;
+    font-family: 'Arial', sans-serif; /* Or your chosen font */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC; /* Light grey border */
+    padding-bottom: 1em;
+}
+
+.footer-content div,
+.footer-content ul {
+    list-style-type: none;
+}
+
+.footer-content h3,
+.footer-content h4 {
+    margin-bottom: 0.5em;
+}
+
+.footer-content ul li a {
+    color: #000000; /* Or use a variable from your color scheme */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5em; /* Space between links */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.footer-icons {
+    text-align: center; /* Center the icons */
+    padding: 1em 0;
+}
+
+.footer-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-icons img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+.footer-bottom {
+    text-align: center; /* Center align the bottom text */
+    padding-top: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div,
+    .footer-content ul {
+        margin-bottom: 1em;
+    }
+}

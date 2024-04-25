@@ -1,0 +1,458 @@
+/* Color Palette */
+:root {
+    --cream: #edede9;
+    --taupe: #d6ccc2;
+    --peach: #f5ebe0;
+    --sand: #e3d5ca;
+    --dusty-rose: #d5bdaf;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 1rem 2rem;
+}
+
+.logo-and-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 100px; /* Adjust to your logo's aspect ratio */
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: var(--dusty-rose);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dusty-rose);
+    font-weight: bold;
+}
+
+nav ul li a.icon {
+    color: var(--dusty-rose);
+}
+/* Continue from existing CSS... */
+
+/* Why You'll Love Us Section */
+.why-love-us {
+    position: relative;
+    text-align: center;
+    background: url('https://i.ibb.co/tq7cR3j/image.png') no-repeat center center;
+    background-size: cover;
+    color: var(--dusty-rose);
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%; /* Adjust the width as per your design needs */
+    margin: 0 auto;
+}
+
+.why-love-us h2 {
+    font-size: 2.5rem; /* Large text size for the heading */
+    margin-bottom: 1rem;
+}
+
+.why-love-us p {
+    font-size: 1.2rem; /* Standard text size for the paragraph */
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 768px) {
+    .content-overlay {
+        width: 90%; /* More width for smaller devices */
+        padding: 10px;
+    }
+
+    .why-love-us h2 {
+        font-size: 1.5rem; /* Smaller font size for mobile devices */
+    }
+}
+
+/* Add other styles below as needed... */
+/* The Founders Section */
+.founders-section {
+    background-color: #FFFFFF; /* white background */
+    padding: 3rem; /* Padding around the content */
+    text-align: center; /* Align text to the left */
+}
+
+.section-title {
+    margin-bottom: 1rem; /* Space below the section title */
+    font-size: 2rem; /* Font size for the title */
+    color: #333; /* Dark grey color for the title */
+    font-family: 'Arial', sans-serif; /* Choose a fun but clear font that matches the theme */
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four images side by side */
+    gap: 1.2rem; /* Space between images */
+    margin-bottom: 1.2rem; /* Space below the grid before the text */
+}
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.founder img {
+    width: 100%; /* Make images responsive within their grid items */
+    margin-bottom: 0.6rem; /* Space between the image and the name */
+}
+
+.founder-name {
+    font-size: 1.5rem; /* Font size for the name */
+    color: var(--taupe); /* Pretty color for the name, from your palette */
+    margin-bottom: 0.28rem; /* Space between the name and the program */
+    font-family: 'Arial', sans-serif; /* Match the font to your brand */
+    transition: color 0.4s ease; /* Transition for hover effect */
+}
+
+.founder-program {
+    font-size: 1rem; /* Smaller font size for the program */
+    color: #d6ccc2; /* Standard text color for the program */
+}
+
+.founder-name:hover {
+    color: var(--dusty-rose); /* Hover effect color for the name */
+}
+
+.founders-description {
+    font-size: 1.2rem; /* Font size for description */
+    color: #333; /* Standard text color for the description */
+    font-family: 'open sans', sans-serif; /* Match the font to your brand */
+    max-width: 1500px; /* Maximum width of the description text */
+    margin: 0 auto; /* Center the description in the page */
+}
+/* Continue from existing CSS... */
+
+/* The Science Behind Our Approach Section */
+.science-approach-section {
+  background-image: url('https://i.ibb.co/BKZzDgw/office-workers-cheering-c-1970s-h-armstrong-robertsclassicstock-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 450px; /* Set the height of the section */
+  display: flex;
+  align-items: center; /* Vertically centers the title */
+  justify-content: center; /* Horizontally centers the title */
+}
+
+.overlay-title h2 {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent white overlay */
+  color: var(--dusty-rose); /* Font color as per your theme */
+  font-size: 2.5rem; /* Font size for the heading */
+  padding: 3rem 4rem; /* Padding around the text */
+  border-radius: 10px; /* Optional: rounded corners for the overlay */
+  display: inline-block; /* Inline-block for the width to fit the content */
+}
+
+/* Additional responsive adjustments if needed */
+@media (max-width: 768px) {
+  .science-approach-section {
+    height: auto; /* Adjust height on smaller screens */
+  }
+  .overlay-title h2 {
+    font-size: 2rem; /* Smaller font size for mobile devices */
+    padding: 0.5rem 1rem; /* Smaller padding for mobile devices */
+  }
+}
+/* Previous styles... */
+
+.benefits-section {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'open sans', sans-serif; /* Replace 'Your Fun Font' with the actual font */
+}
+/* Previous styles... */
+
+.benefits-section {
+    background-color: #ffffff; /* Set white background */
+    text-align: center;
+    padding: 3rem;
+    font-family: 'open sans', sans-serif; /* Replace 'Your Fun Font' with the actual font */
+}
+
+/* Rest of the styles... */
+
+.benefits-description p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 2rem; /* Space before the outcomes */
+}
+
+.outcomes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.outcome {
+    width: 25%; /* Adjust width as necessary */
+    margin-bottom: 2rem;
+}
+
+.outcome img {
+    width: 95%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.outcome h3 {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.outcome p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .outcomes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outcome {
+        width: 80%; /* Full width on smaller screens */
+    }
+}
+/* Continue from the existing styles... */
+
+.resources-section {
+  position: relative;
+  text-align: center;
+  color: #d5bdaf; /* Adjust the font color as needed */
+  font-family: 'Open sans', sans-serif; /* Replace 'YourFont' with your desired font */
+}
+
+.resources-background {
+  width: 100%;
+  display: block; /* Ensures the image takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0.7; /* Adjust the opacity of the image if needed for better readability of the overlay text */
+}
+
+.resources-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay for better text readability */
+  padding: 2rem;
+  width: 100%; /* Adjust as necessary for your design */
+}
+
+.resources-overlay h2 {
+  font-size: 2.6rem; /* Font size for the heading */
+  margin-bottom: 0.5rem; /* Space between heading and paragraph */
+}
+
+.resources-overlay p {
+  font-size: 1.2rem; /* Font size for the paragraph */
+  margin: 0; /* Resets the default margin */
+}
+
+/* Add responsive styles if necessary */
+@media (max-width: 768px) {
+  .resources-overlay {
+    padding: 0.5rem;
+    width: 90%; /* Adjust width for smaller devices */
+  }
+
+  .resources-overlay h2 {
+    font-size: 2rem; /* Adjust font size for smaller devices */
+  }
+}
+/* Continue from the existing styles... */
+
+.resources-list {
+    padding: 3rem 0;
+}
+
+.resource-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem; /* Space between items */
+}
+
+.resource-link {
+    display: inline-block;
+    margin-right: 2rem; /* Space between image and text */
+    transition: transform 0.3s ease;
+}
+
+.resource-link:hover {
+    transform: scale(1.05); /* Bounce effect on hover */
+}
+
+.resource-image {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+}
+
+.resource-info h3 {
+    font-size: 1.7rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.resource-info p {
+    font-size: 1.4rem; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    max-width: 900px; /* Set a max-width for text */
+}
+/* Continue from the existing styles... */
+
+.resources-list {
+    background-color: #ffffff; /* Set white background */
+    padding: 2rem 0;
+}
+
+/* The rest of your resource item styles... */
+
+.resource-link:hover {
+    transform: scale(1.05); /* Bounce effect on hover */
+    /* Consider adding a box-shadow or other effect if desired */
+}
+
+/* Responsive adjustments, if any, go here... */
+
+/* Add responsive styles if necessary */
+@media (max-width: 768px) {
+    .resource-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resource-link {
+        margin-right: 0;
+        margin-bottom: 1rem; /* Space between image and text on mobile */
+    }
+
+    .resource-info {
+        text-align: left;
+    }
+}
+/* Continue from the existing styles... */
+
+.section-divider {
+    height: 1px; /* Thickness of the line */
+    background-color: #333; /* Color of the line, using the taupe from your color palette */
+    margin: 0rem 0; /* Space above and below the line */
+}
+
+/* The rest of your styles... */
+
+/* Footer Section Styles */
+footer {
+    background-color: #FFFFFF; /* Or use a variable from your color scheme */
+    color: #000000; /* Or use a variable from your color scheme */
+    padding: 2em;
+    font-family: 'Arial', sans-serif; /* Or your chosen font */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC; /* Light grey border */
+    padding-bottom: 1em;
+}
+
+.footer-content div,
+.footer-content ul {
+    list-style-type: none;
+}
+
+.footer-content h3,
+.footer-content h4 {
+    margin-bottom: 0.5em;
+}
+
+.footer-content ul li a {
+    color: #000000; /* Or use a variable from your color scheme */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5em; /* Space between links */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.footer-icons {
+    text-align: center; /* Center the icons */
+    padding: 1em 0;
+}
+
+.footer-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-icons img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+.footer-bottom {
+    text-align: center; /* Center align the bottom text */
+    padding-top: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div,
+    .footer-content ul {
+        margin-bottom: 1em;
+    }
+}

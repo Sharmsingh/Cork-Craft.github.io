@@ -1,0 +1,238 @@
+/* Color Palette */
+:root {
+    --cream: #edede9;
+    --taupe: #d6ccc2;
+    --peach: #f5ebe0;
+    --sand: #e3d5ca;
+    --dusty-rose: #d5bdaf;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 1rem 2rem;
+}
+
+.logo-and-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 100px; /* Adjust to your logo's aspect ratio */
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: var(--dusty-rose);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dusty-rose);
+    font-weight: bold;
+}
+
+nav ul li a.icon {
+    color: var(--dusty-rose);
+}
+/* ... Existing CSS content ... */
+
+.full-width-image {
+    background: url('https://i.ibb.co/WWNbcvC/wewantbeer.jpg') no-repeat center center;
+    background-size: cover; /* Cover the entire width of the page */
+    width: 100%; /* Full width of the page */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 400px; /* Minimum height, you can adjust this value */
+}
+
+/* Ensure no margin or padding on the body and html to allow full width */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ... Continue with the rest of your CSS content ... */
+.contact-section {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact-heading {
+  font-family: 'Dancing Script', cursive;
+  color: /* Your chosen color */;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  margin-bottom: 50px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-details {
+  width: 40%;
+  text-align: left;
+}
+
+.contact-details p {
+  margin-bottom: 65px;
+}
+
+.contact-details i {
+  margin-right: 15px;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #d6ccc2;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  background-color: /* dusty-rose */;
+  color: dusty-rose;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: /* A slightly darker shade of your chosen color */;
+}
+
+/* Add responsive styles as needed */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-details,
+  .contact-form {
+    width: 100%;
+  }
+}
+.section-divider {
+    height: .5px; /* Thickness of the line */
+    background-color: #333; /* Color of the line, using the taupe from your color palette */
+    margin: 0rem 0; /* Space above and below the line */
+}
+
+/* The rest of your styles... */
+/* Footer Section Styles */
+footer {
+    background-color: #FFFFFF; /* Or use a variable from your color scheme */
+    color: #000000; /* Or use a variable from your color scheme */
+    padding: 2em;
+    font-family: 'Arial', sans-serif; /* Or your chosen font */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC; /* Light grey border */
+    padding-bottom: 1em;
+}
+
+.footer-content div,
+.footer-content ul {
+    list-style-type: none;
+}
+
+.footer-content h3,
+.footer-content h4 {
+    margin-bottom: 0.5em;
+}
+
+.footer-content ul li a {
+    color: #000000; /* Or use a variable from your color scheme */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5em; /* Space between links */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.footer-icons {
+    text-align: center; /* Center the icons */
+    padding: 1em 0;
+}
+
+.footer-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-icons img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+.footer-bottom {
+    text-align: center; /* Center align the bottom text */
+    padding-top: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div,
+    .footer-content ul {
+        margin-bottom: 1em;
+    }
+}

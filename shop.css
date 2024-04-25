@@ -1,0 +1,229 @@
+/* Color Palette */
+:root {
+    --cream: #edede9;
+    --taupe: #d6ccc2;
+    --peach: #f5ebe0;
+    --sand: #e3d5ca;
+    --dusty-rose: #d5bdaf;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 1rem 2rem;
+}
+
+.logo-and-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 100px; /* Adjust to your logo's aspect ratio */
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: var(--dusty-rose);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dusty-rose);
+    font-weight: bold;
+}
+
+nav ul li a.icon {
+    color: var(--dusty-rose);
+}
+
+.packages-section {
+    position: relative;
+    text-align: center;
+    color: var(--taupe);
+    background-image: url('https://i.ibb.co/7tyPfRY/barrels.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+}
+
+.packages-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 2em;
+    border-radius: 10px;
+    width: 100%; /* Adjust as necessary */
+}
+
+.packages-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.packages-list {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.package {
+    width: calc(50% - 2rem);
+    margin: 1.2rem;
+    display: inline-block;
+    horizontal-align: top;
+}
+
+.build-own {
+    width: 55%;
+    clear: both; /* Ensures this package sits on its own row */
+}
+
+.package-link {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.package-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Rounded corners for images */
+    box-shadow: 1 6px 10px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.package-label {
+    background-color: #FFD700; /* Gold color for a fun label */
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for the label */
+}
+
+.package-label:hover {
+    transform: translateX(-50%) scale(1.05); /* Bounce effect on hover */
+}
+
+.package-description {
+    color: #333;
+    font-family: 'Comic Neue', cursive; /* Fun, readable font */
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .package, .build-own {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .package-label {
+        top: -1.5rem; /* Adjust label position on smaller screens */
+    }
+}
+/* Footer Section Styles */
+footer {
+    background-color: #FFFFFF; /* Or use a variable from your color scheme */
+    color: #000000; /* Or use a variable from your color scheme */
+    padding: 2em;
+    font-family: 'Arial', sans-serif; /* Or your chosen font */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC; /* Light grey border */
+    padding-bottom: 1em;
+}
+
+.footer-content div,
+.footer-content ul {
+    list-style-type: none;
+}
+
+.footer-content h3,
+.footer-content h4 {
+    margin-bottom: 0.5em;
+}
+
+.footer-content ul li a {
+    color: #000000; /* Or use a variable from your color scheme */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5em; /* Space between links */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.footer-icons {
+    text-align: center; /* Center the icons */
+    padding: 1em 0;
+}
+
+.footer-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-icons img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+.footer-bottom {
+    text-align: center; /* Center align the bottom text */
+    padding-top: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div,
+    .footer-content ul {
+        margin-bottom: 1em;
+    }
+}

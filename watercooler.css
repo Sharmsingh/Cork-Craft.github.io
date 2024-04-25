@@ -1,0 +1,244 @@
+/* Color Palette */
+:root {
+    --cream: #edede9;
+    --taupe: #d6ccc2;
+    --peach: #f5ebe0;
+    --sand: #e3d5ca;
+    --dusty-rose: #d5bdaf;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 1rem 2rem;
+}
+
+.logo-and-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 100px; /* Adjust to your logo's aspect ratio */
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: var(--dusty-rose);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dusty-rose);
+    font-weight: bold;
+}
+
+nav ul li a.icon {
+    color: var(--dusty-rose);
+}
+/* Other styles above... */
+/* Other styles above... */
+
+.full-width-image-container {
+    width: 100vw; /* Viewport width to make it full-width */
+    margin-left: calc(-50vw + 50%); /* Center the image if there's a centered layout constraint */
+    overflow: hidden; /* Ensures no overflow if the image is larger than the viewport width */
+}
+
+.full-width-image {
+    width: 100vw; /* Viewport width to make it full-width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Prevents any additional space under the image */
+}
+
+/* Make sure the body has no margin or padding */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Other styles below... */
+.full-width-image-container {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+}
+
+.full-width-image {
+    width: 100vw;
+    height: 100vh; /* Adjust the value to get the desired height. */
+    object-fit: cover; /* This will cover the area and may crop the image. */
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.full-width-image-container {
+    width: 100vw;
+    overflow: hidden;
+    position: relative; /* Position relative so that the image can be absolutely positioned inside it */
+    height: 450px; /* Set a fixed height or use 'vh' for a responsive height */
+}
+
+.full-width-image {
+    width: 100vw;
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Aligns the bottom of the image with the bottom of the container */
+    left: 50%; /* Centers the image */
+    transform: translateX(-50%); /* Aligns the center of the image with the center of the container */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.water-cooler {
+    text-align: center;
+    background-color: white;
+    padding: 3em;
+}
+
+.water-cooler h2 {
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 0.5em;
+}
+
+.water-cooler p {
+    margin-bottom: 2em;
+}
+
+.blog-post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    gap: 2em;
+}
+
+.blog-post {
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05); /* Bubbly, bouncing effect */
+}
+
+.show-more {
+    background-color: #f5ebe0; /* From your color palette */
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-more:hover {
+    background-color: #d6ccc2; /* Darker color on hover */
+}
+.water-cooler {
+    text-align: center;
+    background-color: white;
+    padding: 2em;
+}
+
+.water-cooler h2 {
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 0.5em;
+}
+
+.water-cooler p {
+    font-size: 1.3em; /* Increased font size */
+    margin-bottom: 1.1em;
+}
+
+.blog-post-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    gap: 1em;
+}
+
+.blog-post img {
+    width: 75%; /* Decreased image size */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto; /* Center images in their container */
+}
+
+.blog-post {
+    transition: transform 0.3s ease;
+    display: flex; /* Aligns the image properly within the anchor */
+    justify-content: center; /* Centers the image horizontally */
+}
+
+.blog-post:hover {
+    transform: scale(1.05); /* Bubbly, bouncing effect */
+}
+
+.show-more {
+    background-color: #f5ebe0; /* From your color palette */
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1.2em; /* Increased font size */
+    transition: background-color 0.3s ease;
+}
+
+.show-more:hover {
+    background-color: #d6ccc2; /* Darker color on hover */
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); /* This imports a fun, handwriting-like font */
+
+.water-cooler h2 {
+    font-family: 'Dancing Script', cursive; /* This is a fun and creative font */
+    font-size: 3em; /* Adjusted font size for emphasis */
+    position: relative; /* Position relative to use pseudo-elements */
+    display: inline-block; /* Make the header inline for the underline to fit correctly */
+    margin-bottom: 0.5em;
+    background-image: linear-gradient(120deg, #f5ebe0 0%, #f5ebe0 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 1.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+
+.water-cooler h2:hover {
+    background-size: 100% 88%; /* Highlight effect when hovered */
+}
+
+.water-cooler h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: url('path-to-squiggly-line-image.png') repeat-x; /* Replace with your squiggly line image */
+    position: absolute;
+    bottom: -10px; /* Adjust this value as needed */
+    left: 0;
+}
